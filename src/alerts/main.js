@@ -1,4 +1,4 @@
-define(['models/alert','views/alert_view'], function (Alert, AlertView) {
+define(['alerts/models/alert','alerts/views/alert_view'], function (Alert, AlertView) {
     return {
         create: function (params) {
             params.model = new Alert;
