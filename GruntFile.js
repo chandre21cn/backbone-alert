@@ -9,10 +9,10 @@ module.exports = function (grunt) {
                              underscore:'http://underscorejs.org/underscore-min.js',
                                      backbone:'http://backbonejs.org/backbone-min.js'
                                          },
-
+optimize:'none',
                     baseUrl: "src",
-                    mainConfigFile:"src/main.js",
-                    name:"main",
+                    mainConfigFile:"src/alerts/main.js",
+                    name:"alerts/main",
                     out:'build/alerts.min.js'
                 }
             }
