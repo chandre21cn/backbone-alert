@@ -10,10 +10,15 @@ module.exports = function (grunt) {
                                      backbone:'http://backbonejs.org/backbone-min.js'
                                          },
 optimize:'none',
-                    baseUrl: "src",
+
+                    baseUrl: ".",
                     mainConfigFile:"src/alerts/main.js",
                     name:"alerts/main",
-                    out:'build/alerts.min.js'
+                    appDir:"src",
+dir:'build'
+
+//                    out:'build/alerts.min.js'
+
                 }
             }
         }
