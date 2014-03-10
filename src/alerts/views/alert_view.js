@@ -10,6 +10,9 @@ define(['backbone'], function (Backbone) {
             this.model.set(model_params);
             return this.render();
         },
+        showSuccess: function (message) {
+            return this.show(message || 'Success!', {style : 'success'});
+        },
         render : function () {
             this.$el.html(this.template(this.model.toJSON()));
             return this;
